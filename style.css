@@ -35,6 +35,7 @@ nav button{
     border: 0;
     outline: 0;
     background-color: #db0001;
+    color: #fff;
     padding: 7px 20px;
     font-size: 12px;
     margin-left: 10px;
@@ -63,7 +64,7 @@ nav button{
     margin-top: 100px;
 }
 .header-content h1{
-    font-size: 3rem;
+    font-size: 40px;
     line-height: 70px;
     font-weight: 900;
     max-width: 650px;
@@ -104,6 +105,7 @@ nav button{
 }
 .row{
     display: flex;
+    width: 100%;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
@@ -123,7 +125,7 @@ nav button{
     margin: auto; 
 }
 .features h2{
-    font-size: 3rem;
+    font-size: 40px;
     font-weight: 900;
     margin-bottom: 20px;
 }
@@ -134,7 +136,7 @@ nav button{
     font-size: 18px;
 }
 .faq h2{
-    font-size: 3rem;
+    font-size: 40px;
     font-weight: 900;
 }
 
@@ -215,6 +217,10 @@ input[type="radio"]{
     font-size: 14px;
     margin-bottom: 10px;
 }
+.footer .row{
+    align-items: flex-start;
+    padding: 10px 0;
+}
 
 .copyright{
     font-size: 14px;
@@ -223,7 +229,7 @@ input[type="radio"]{
 }
 
 
-@media only screen and(max-width:600px){
+@media only screen and (max-width:600px){
     .logo{
         width: 100px;
     }
@@ -244,5 +250,33 @@ input[type="radio"]{
     .email-signup button{
         font-size: 12px;
         padding: 10px 15px;
+    }
+    .text-col, .img-col{
+        flex-basis: 100%;
+    }
+    .features h2{
+        font-size: 30px;
+    }
+    .features p{
+        font-size: 15px;
+    }
+    .row:nth-child(2), .row:nth-child(4){
+        flex-direction: column-reverse;
+    }
+    .features .row{
+        padding: 10px 0;
+    }
+    .faq h2{
+        font-size: 20px;
+    }
+    .accordian .content{
+        font-size: 14px;
+    }
+    .accordian li label{
+        font-size: 14px;
+        padding: 10px;
+    }
+    label::after{
+        font-size: 22px;
     }
 }
